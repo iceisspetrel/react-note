@@ -1,6 +1,9 @@
 /*
  * 简单记录注释react的使用要点
  */
+ 
+ //依赖： react react-dom browser
+ //type="text/babel" 需要browser将jsx编译为js
 
 var Item = React.createClass({
 
