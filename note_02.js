@@ -36,3 +36,10 @@ this.getDefaultProps = function(){
 		data : ''
 	}
 }
+
+//将对象直接赋值进组件的props
+//var props = {name : 'demo', age:'5'}
+//<div {...props}></div> == <div name="demo" age="5"></div>
+//如果组件中赋值有某prop， ...复制对象中也有某prop， 采用合并的策略。后面的覆盖前面的
+//getDefaultProprs最先执行，所以此方法中的赋值会被节点属性的赋值方式覆盖
+
